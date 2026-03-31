@@ -23,3 +23,37 @@ The goal is not just to generate text, but to produce **structured, useful analy
 ##  Approach
 
 The system is designed as a **single-step LLM pipeline**:
+
+### 1. Clone the repository
+git clone <your-repo-url>
+cd script-analyzer
+
+### 2. Create a virtual environment
+python -m venv venv
+
+### 3. Activate the environment
+
+Windows:
+venv\Scripts\activate
+
+Mac/Linux:
+source venv/bin/activate
+
+### 4. Install dependencies
+pip install -r requirements.txt
+
+### 5. Add your Gemini API key
+
+Create a `.env` file in the root folder:
+
+GEMINI_API_KEY=your_api_key_here
+
+(Optional)
+GEMINI_MODEL=gemini-3.1-flash-lite-preview
+
+### 6. Run the application
+streamlit run app.py
+
+### 7. Open in browser
+The app will automatically open at:
+http://localhost:8501
